@@ -1,0 +1,258 @@
+<!doctype html>
+<!-- Image Credits -->
+<!-- Cartoon-Pizza-chef-on-transparent-PNG.png: https://similarpng.com/cartoon-pizza-chef-on-transparent-png/#getdownload -->
+<!-- two_pep_pizzas.jpg: https://www.linkedin.com/pulse/two-pizza-rule-justin-ricketts/ -->
+<!-- pizza-wings.jpg: https://www.tripadvisor.ca/Restaurant_Review-g41224-d4951817-Reviews-Pizza_Wings-Laurel_Maryland.html -->
+<!-- cheesy-bread-2A.jpg: https://www.agoudalife.com/cheesy-garlic-breadsticks/ -->
+<!-- Veggie-Pizza-8-480x270.jpg: https://www.twopeasandtheirpod.com/best-veggie-pizza/ -->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Assignment 2: Section of a pizza website where you can build your pizza">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Pizza Palace: Order Now</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <div>
+                <a href="index.html">
+                    <img src="./img/Cartoon-Pizza-chef-on-transparent-PNG.png" alt="Chef holding a pizza and pointing up">
+                </a>
+                
+                <!-- Restaurant name -->
+                <a href="index.html">
+                    <h2>Pizza Palace</h2>
+                </a>
+            </div>
+
+            <!-- Nav Menu -->
+            <nav>
+                <menu>
+                    <!-- We are on the Order Now page -->
+                    <li><a href="index.html">Order Now</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </menu>
+            </nav>
+        </header>
+
+        <!-- Masthead -->
+        <section class="masthead">
+            <h1>Order Now</h1>
+        </section>
+
+        <!-- I was just trying to use a bit of grid in css, so I put main and aside in a grid container-->
+        <div class="grid-content-container">
+            <main>
+                <!-- Form section  -->
+                <section>
+                    <div>
+                        <form action="somefile.php" method="post">
+                            <!-- # of Pizzas (Number Box)-->
+                            <div>
+                                <h4>How Many Pizzas?</h4>
+                                <input type="number" value="1" min="1">
+                            </div>
+                            
+                            <!-- Size (Radio Button)-->
+                            <div>
+                                <h4>Size</h4>
+                                <input type="radio" id="small" name="pizza_size" value="Small">
+                                <label for="small">Small</label>
+                                <br>
+                                <input type="radio" id="medium" name="pizza_size" value="Medium" checked="checked">
+                                <label for="medium">Medium</label>
+                                <br>
+                                <input type="radio" id="large" name="pizza_size" value="Large">
+                                <label for="large">Large</label>
+                                <br>
+                                <input type="radio" id="xlarge" name="pizza_size" value="Extra Large">
+                                <label for="xlarge">Extra Large</label>
+                                <br>
+                            </div>
+
+                            <!-- Sauces (Radio Button)-->
+                            <div>
+                                <h4>Pizza Sauce</h4>
+                                <input type="radio" id="marinara" name="sauce_choice" value="Marinara" checked="checked">
+                                <label for="marinara">Marinara</label>
+                                <br>
+                                <input type="radio" id="spicy_marinara" name="sauce_choice" value="Spicy Marinara">
+                                <label for="spicy_marinara">Spicy Marinara</label>
+                                <br>
+                                <input type="radio" id="alfredo" name="sauce_choice" value="Alfredo">
+                                <label for="alfredo">Alfredo</label>
+                                <br>
+                                <input type="radio" id="bbq" name="sauce_choice" value="BBQ">
+                                <label for="bbq">BBQ</label>
+                                <br>
+                            </div>
+
+                            <!-- Cheese (Radio Button)-->
+                            <div>
+                                <h4>Cheese</h4>
+                                <input type="radio" id="none" name="cheese_choice" value="None">
+                                <label for="none">None</label>
+                                <br>
+                                <input type="radio" id="light" name="cheese_choice" value="Light">
+                                <label for="light">Light</label>
+                                <br>
+                                <input type="radio" id="regular" name="cheese_choice" value="Regular" checked="checked">
+                                <label for="regular">Regular</label>
+                                <br>
+                                <input type="radio" id="extra" name="cheese_choice" value="Extra">
+                                <label for="extra">Extra</label>
+                                <br>
+                            </div>
+
+                            <!-- Toppings -->
+                            <!-- Using checkboxes for toppings -->
+                            <div>
+                                <h4>Choose Toppings</h4>
+                                <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
+                                <label for="pepperoni">Pepperoni</label>
+                                <br>
+                                <input type="checkbox" id="sausage" name="sausage" value="Sausage">
+                                <label for="sausage">Sausage</label>
+                                <br>
+                                <input type="checkbox" id="bacon" name="bacon" value="Bacon">
+                                <label for="bacon">Bacon</label>
+                                <br>
+                                <input type="checkbox" id="ham" name="ham" value="Ham">
+                                <label for="ham">Ham</label>
+                                <br>
+                                <input type="checkbox" id="beef" name="beef" value="Beef">
+                                <label for="beef">Beef</label>
+                                <br>
+                                <input type="checkbox" id="chicken" name="chicken" value="Chicken">
+                                <label for="chicken">Chicken</label>
+                                <br>
+                                <input type="checkbox" id="parmesan_cheese" name="parmesan_cheese" value="Parmesan Cheese">
+                                <label for="parmesan_cheese">Parmesan Cheese</label>
+                                <br>
+                                <input type="checkbox" id="onions" name="onions" value="Onions">
+                                <label for="onions">Onions</label>
+                                <br>
+                                <input type="checkbox" id="green_peppers" name="green_peppers" value="Green Peppers">
+                                <label for="green_peppers">Green Peppers</label>
+                                <br>
+                                <input type="checkbox" id="mushrooms" name="mushrooms" value="Mushrooms">
+                                <label for="mushrooms">Mushrooms</label>
+                                <br>
+                                <input type="checkbox" id="green_olives" name="green_olives" value="Green Olives">
+                                <label for="green_olives">Green Olives</label>
+                                <br>
+                                <input type="checkbox" id="black_olives" name="black_olives" value="Black Olives">
+                                <label for="black_olives">Black Olives</label>
+                                <br>
+                                <input type="checkbox" id="banana_peppers" name="banana_peppers" value="Banana Peppers">
+                                <label for="banana_peppers">Banana Peppers</label>
+                                <br>
+                                <input type="checkbox" id="jalapenos" name="jalapenos" value="Jalapenos">
+                                <label for="jalapenos">Jalapenos</label>
+                                <br>
+                                <input type="checkbox" id="pineapple" name="pineapple" value="Pineapple">
+                                <label for="pineapple">Pineapple</label>
+                                <br>
+                                <input type="checkbox" id="spinach" name="spinach" value="Spinach">
+                                <label for="spinach">Spinach</label>
+                                <br>
+                            </div>
+
+                            <!-- Name, Number, Address, Email (Using text boxes)-->
+                            <input type="text" name="name" placeholder="*Order Name" required>
+                            <input type="tel" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="*Phone (123-456-7890)" required>
+                            <input type="text" name="address" placeholder="*Delivery Address" required>
+                            <input type="email" name="emal" placeholder="Email">
+                            <!-- Put these in a paragraph so they would stay together when I used flex for this section in css -->
+                            <p>
+                                <input type="checkbox" id="email_updates" name="email_updates" value="Email Updates" checked="checked">
+                                <label for="email_updates">Opt into email updates?</label>
+                            </p>
+                            
+
+                            <!-- Confirm Order button (Submit type)-->
+                            <input type="submit" value="Confirm Order">
+                        </form>
+                    </div>
+                </section>
+            </main>
+                <!-- Assuming we need some knowledge of PHP to display values collected in a form -->
+
+                <!-- Aside Section With Some Deals -->
+            <aside>
+                <h3>Great Deals</h3>
+                <!-- 2 pepperoni pizzas deal -->
+                <article class="article1">
+                    <figure>
+                        <a href="#">
+                            <img src="./img/two_pep_pizzas.jpg" alt="Two pepperoni pizzas next to each other.">
+                        </a>
+                        <figcaption>Two Medium Pepperoni Pizzas - $17.99</figcaption>
+                    </figure>
+                </article>
+
+                <!-- Pizza and Wings deal -->
+                <article class="article2">
+                    <figure>
+                        <a href="#">
+                            <img src="./img/pizza-wings.jpg" alt="Pepperoni pizza next to a pound of chicken wings.">
+                        </a>
+                        <figcaption>Medium Pizza and 1lb Wings - $15.99</figcaption>
+                    </figure>
+                </article>
+
+                <!-- Cheesy Bread deal -->
+                <article class="article3">
+                    <figure>
+                        <a href="#">
+                            <img src="./img/cheesy-bread-2A.jpg" alt="Cheesy garlic bread with some marinara dipping sauce next to it.">
+                        </a>
+                        <figcaption>Cheesy Garlic Bread - $7.99</figcaption>
+                    </figure>
+                </article>
+
+                <!-- Veggie Pizza deal -->
+                <article class="article4">
+                    <figure>
+                        <a href="#">
+                            <img src="./img/Veggie-Pizza-8-480x270.jpg" alt="A vegetarian pizza with a slice taken out of it.">
+                        </a>
+                        <figcaption>Large Veggie Pizza - $10.99</figcaption>
+                    </figure>
+                </article>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Logo again -->
+            <div>
+                <a href="index.html">
+                    <img src="./img/Cartoon-Pizza-chef-on-transparent-PNG.png" alt="Chef holding a pizza and pointing up">
+                </a>
+            </div>
+
+            <div>
+                <!-- Some of the stuff you might see at the bottom of a company's webpage -->
+                <h5>Privacy Statement</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, labore libero! Ratione, repellendus itaque numquam maxime facilis sit obcaecati, dicta iste voluptates ex blanditiis voluptatum vel ullam pariatur. Tempora nam fugit quasi ullam saepe. Adipisci quaerat officiis dignissimos nam quae tempore. Ex accusamus saepe tempore nobis. Quasi porro molestiae, alias similique velit nam labore. Esse, expedita sapiente tempora unde voluptates blanditiis magnam quis numquam ea fuga cum magni animi, architecto natus. Reprehenderit, sit! Architecto, quaerat?</p>
+                <h5>Corporate Address</h5>
+                <p>308 Negra Arroyo Lane, Albaquerque, New Mexico, 87104</p>
+                <a href="#"><h5>Careers</h5></a>
+            </div>
+        </footer>
+    </body>
+</html>
