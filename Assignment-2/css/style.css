@@ -1,0 +1,246 @@
+/** Originally had all the red and green colours swapped, thought it would look better with the green background for the pizza guy **/
+
+/** setting background colour **/
+body{
+    margin: 0px;
+    background-color: #f8f8f8;
+}
+
+/** set fonts **/
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+}
+
+p,a,li,label,figcaption,input{
+    font-family: "Roboto Condensed", sans-serif;
+    text-decoration: none;
+}
+
+/** Header **/
+header{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: #1c5814;
+}
+/** Use flex for the header db2500 **/
+header > div{
+    flex-grow: 1;
+    height: 125px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+/** formatting the logo **/
+header > div > a > img{
+    width: auto;
+    height: 125px;
+}
+
+/** formatting for restaurant name beside logo **/
+header > div > a + a > p{
+    font-size: 42px;
+    font-family: "Oswald", sans-serif;
+    color: #f8f8f8;
+}
+
+/**  styling nav bar **/
+header > nav > menu{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    display: flex;
+}
+header > nav > menu > li{
+    padding: 0px 12px;
+}
+header > nav > menu > li > a{
+    font-size: 20px;
+    color: #f8f8f8;
+}
+
+/** masthead 1c5814**/
+.masthead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db2500;
+    height: 15vh;
+}
+
+.masthead h1{
+    font-size: 46px;
+    color: #f8f8f8;
+}
+
+/** going with grid for main and aside **/
+.grid-content-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: "main aside";
+}
+
+/** styling main **/
+main{
+    grid-area: main;
+}
+main > section{
+    margin: 0px;
+    padding: 2% 2%;
+}
+
+/** setting the form as a flex display **/
+main > section > div > form{
+    display: flex;
+    flex-direction: column;
+}
+
+/** fixing spacing of h4s **/
+main > section > div > form > div > h3{
+    margin: 0px;
+    font-size: 15px;
+}
+
+/** Make Number of Pizzas box look nice **/
+main > section > div > form > div > input[type="number"]{
+    border: solid 2px #0e0e0e;
+    width: 7%;
+    margin-top: 5px;
+    padding: 3px 5px;
+    align-self: start;
+}
+
+/** making the buttons and checkboxes have their own boxes **/
+main > section > div > form > div{
+    width: 90%;
+    border: solid 2px #0e0e0e;
+    margin: 10px 0px;
+    padding:10px 5px;
+    align-self: center;
+}
+
+/** Make text boxes look nice **/
+main > section > div > form > input[type="text"],
+main > section > div > form > input[type="email"],
+main > section > div > form > input[type="tel"]{
+    border: solid 2px #0e0e0e;
+    margin: 10px 0px;
+    width: 90%;
+    padding: 10px 5px;
+    align-self: center;
+}
+
+/** Make bottom checkbox look nice **/
+main > section > div > form > p > input[type="checkbox"]{
+    margin: 0px 8px 15px 25px;  
+    align-self: start;
+}
+
+/** shrinking text attached to the checkbox under emails **/
+main > section > div > form > p > label[for="email_updates"]{
+    font-size: 13px;
+    
+}
+
+/** Make the submit button look nice **/
+main > section > div > form > input[type="submit"]{
+    border: solid 2px #db2500;
+    background-color: #db2500;
+    color: #f8f8f8;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 0px;
+    align-self: center;
+    
+}
+
+/** styling aside **/
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    margin: 0px;
+    padding: 15% 0%;
+    align-items: center;
+    justify-items: center;
+}
+
+/** Great Deals Header **/
+aside > h4{
+    font-size: 36px;
+    margin: 0px;
+    padding-bottom: 10%;
+}
+
+/** Formatting the pictures in the aside **/
+aside > article > figure > a > img{
+    height: auto;
+    width: 100%;
+}
+
+/** article 1 increase font size**/
+.article1 figure figcaption{
+    font-size: 22px;
+}
+
+/** article 2 increase font size**/
+.article2 figure figcaption{
+    font-size: 22px;
+}
+
+/** article 3 increase font size**/
+.article3 figure figcaption{
+    font-size: 22px;
+}
+
+/** article 4 increase font size**/
+.article4 figure figcaption{
+    font-size: 22px;
+}
+
+/** footer **/
+footer{
+    height:250px;
+    display: flex;
+    align-items: center;
+    background-color: #1c5814;
+}
+
+footer > div{
+    height: 240px;
+    width: auto;
+    margin: 0px;
+    padding: 0px 2%;
+    flex-grow: 1;
+}
+
+/** adding logo **/
+footer > div > a > img{
+    height: 100%;
+    width: auto;
+}
+
+/** second div in footer, I want it to take up a good chunk of space **/
+footer > div + div{
+    width: 70%;
+}
+
+/** make lorem text small and white **/
+footer > div + div > p{
+    color: #f8f8f8;
+    font-size: 10px;
+}
+
+/** make headers white **/
+footer > div + div > h5{
+    color: #f8f8f8;
+}
+
+/** make Careers look better **/
+footer > div + div > a > h5{
+    color: #f8f8f8;
+}
